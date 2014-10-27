@@ -1,0 +1,26 @@
+# look-grey
+
+active.style            vertical gradient 
+active.color            black
+active.color.from       rgb:ce/ce/ce
+active.color.to         rgb:a9/a9/a9
+active.background       grey
+active.border           black
+active.button.style     vertical gradient
+active.button.color     black
+active.button.color.from rgb:ce/ce/ce
+active.button.color.to   rgb:a9/a9/a9
+active.button.background grey
+
+inactive.style          vertical gradient
+inactive.color          rgb:77/77/77
+inactive.color.from     rgb:ce/ce/ce
+inactive.color.to       rgb:a9/a9/a9
+inactive.border.color   black
+inactive.button.style   vertical gradient
+inactive.button.color   rgb:77/77/77
+inactive.button.color.from rgb:ce/ce/ce
+inactive.button.color.to rgb:a9/a9/a9
+inactive.button.background grey
+
+background xsetroot -solid grey10

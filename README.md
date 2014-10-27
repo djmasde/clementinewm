@@ -3,6 +3,8 @@ Summary
 
 clementinewm is a very simple and lightweight window manager.
 
+is a "fork" of the original wm (Clementine Window Manager), with bugfixes
+
 
 Status
 ------
@@ -19,6 +21,8 @@ Status
   -Added Missing headers to compile ok now.. 
  
   -Fixed crashes in wm, with gimp, and other windows...
+ 
+  -Renamed the executable to clementinewm "conflicts with clementine music player"   
    
 In debian and derivatives: 
 

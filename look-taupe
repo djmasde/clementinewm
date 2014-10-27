@@ -1,0 +1,23 @@
+# look-taupe
+
+active.style            flat border 
+active.color            tan
+active.border.color     grey
+active.text.color       white
+active.text.font        fixed
+active.control.color    white
+
+inactive.style          flat border
+inactive.color          grey
+inactive.border.color   grey
+inactive.text.color     grey
+inactive.text.font      fixed
+inactive.control.color  grey
+
+menu.style              flat border
+menu.color              tan
+menu.text.font          fixed
+menu.text.color         grey
+menu.border.color       rgb:61/70/71
+
+background bggen 30 42 43  61 70 71 -r 180 | xv -root -quit  -

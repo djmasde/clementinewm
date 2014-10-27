@@ -1,0 +1,49 @@
+  Clementine Window Manager
+  Copyright 2002 Dave Berton <db@mosey.org>
+
+  based on aewm Copyright 1998-2001 Decklin Foster <decklin@red-bean.com>
+
+  This program is free software; see LICENSE for details.
+
+0.0.7.1
+
+- Realive this wm, to run in 2014
+- Second button of the mouse no kills the wm, launchs dmenu_run
+- Minor bugfixes
+- Keybindings are deleted
+- Fixed crashes of this wm
+
+0.0.7
+- Expand styles a bit to cover buttons separately.  
+- No longer a 'menu' entry in styles, 'active' now used for menu.
+- Fix annoying flicker when resizing/moving windows.
+- Provide feedback on window button press.
+
+0.0.6 
+- Eliminate bad flicker when closing windows.
+- Fix rubber band drawing when moving/resizing.
+- Only rubber band if actually moving/resizing.
+- Middle-click on root now restarts.
+- Handle mouse-click in titlebar better.
+- More prominent titlebar controls.
+
+0.0.5
+- Fix menu drawing code.
+- Only use default theme if 'look' file cannot be found.
+
+0.0.4
+- Added ColorManager, which manages color (duh).
+- Simplified drawing code.
+- Simplified theme support.
+- Settled on standard button indicators.
+
+0.0.3
+- No changes, just added missing LICENSE files.
+
+0.0.2
+- Still very early alpha code, but starting to shape up.
+- Improved drawing code.
+- Basic support for styles.
+
+0.0.1
+- Initial public release.

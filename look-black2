@@ -1,0 +1,27 @@
+# look-black2
+
+active.style            horizontal gradient bevel 
+active.color            white
+active.color.from       #253040
+active.color.to         black
+active.border           black
+active.background       black
+active.button style     horizontal gradient bevel
+active.button.color     white
+active.button.color.from #253040
+active.button.color.to  black
+active.button.background black
+
+inactive.style          vertical gradient bevel
+inactive.color          #1c2531
+inactive.color.from     #91949f
+inactive.color.to       #242e39
+inactive.border         black
+inactive.background     black
+inactive.button.style   vertical gradient bevel
+inactive.button.color   black
+inactive.button.color.from #91949f
+inactive.button.color.to   #242e39
+inactive.button.background black
+
+background bggen 145 148 159  36 46 57  -r 90 | xv -root -quit  -

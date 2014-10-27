@@ -1,0 +1,19 @@
+# look-xemacs
+
+active.style            flat bevel
+active.color            #00008b
+active.background       rgb:ce/ce/ce
+active.border           #4d4d4d
+active.button.style     flat bevel
+active.button.color     #cd0000
+active.button.background rgb:ce/ce/ce
+
+inactive.style          flat bevel
+inactive.color          #4d4d4d
+inactive.background     grey
+inactive.border         #4d4d4d
+inactive.button.style   flat bevel
+inactive.button.color   #4d4d4d
+inactive.button.background grey
+
+background xsetroot -solid grey40

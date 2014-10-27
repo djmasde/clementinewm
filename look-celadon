@@ -1,0 +1,19 @@
+# look-celadon
+
+active.style            flat
+active.color            white 
+active.background       rgb:61/70/71
+active.border           grey
+active.button.style     flat
+active.button.color     white
+active.button.background rgb:61/70/71
+
+inactive.style          flat 
+inactive.color          grey
+inactive.background     rgb:30/42/43
+inactive.border         grey
+inactive.button.style   flat
+inactive.button.color   grey
+inactive.button.background rgb:30/42/43
+
+background bggen 30 42 43  61 70 71 -r 180 | xv -root -quit  -

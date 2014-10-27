@@ -1,0 +1,23 @@
+# look-blue
+
+active.style            gradient vertical bevel
+active.color            white
+active.color.from       rgb:70/80/90
+active.color.to         rgb:33/44/55
+active.border           grey
+active.background       grey
+active.button.style     gradient vertical bevel
+active.button.color     rgb:33/44/55
+active.button.color.from grey85
+active.button.color.to  grey65
+active.button.background grey
+
+inactive.style          flat bevel
+inactive.color          rgb:33/44/55
+inactive.background     grey
+inactive.border         grey
+inactive.button.style     flat bevel
+inactive.button.color     rgb:33/44/55
+inactive.button.background grey
+
+background bggen 33 44 55  0 0 0  -r 45 | xv -root -quit  -

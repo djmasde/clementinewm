@@ -1,0 +1,21 @@
+# look-turq
+
+active.style            horizontal gradient bevel
+active.color            #d1d1d1
+active.color.from       grey45
+active.color.to         #185975
+active.border           black
+active.background       grey45
+active.button.style     flat bevel
+active.button.color     #eeeeee
+active.button.background #969696
+
+inactive.style          flat
+inactive.color          #939393
+inactive.border         black
+inactive.background     #185975
+inactive.button.style   flat
+inactive.button.color   #939393
+inactive.button.background #185975
+
+background xsetroot -solid grey

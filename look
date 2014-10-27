@@ -1,0 +1,19 @@
+# look-black
+
+active.style            flat
+active.color            #cccccc
+active.background       black
+active.border           #7c808b
+active.button.style     flat
+active.button.color     #7c808b
+active.button.background black
+
+inactive.style          flat
+inactive.color          #4b4b4b
+inactive.background     #000000
+inactive.border         #4b4b4b
+inactive.button.style   flat
+inactive.button.color   #4b4b4b
+
+background xsetroot -solid black
+
