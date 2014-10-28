@@ -38,9 +38,7 @@ Need Xlib, then:
 
     $ make clean
 
-To install looks
-
-    In the current dir of clementinewm:
+To install looks, in the current dir of clementinewm:
     
     $ cp look $HOME/.config/look
 
