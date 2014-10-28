@@ -40,7 +40,7 @@ Need Xlib, then:
 
 To install looks:
 
-    In the current dir of clementinewm:
+ * In the current dir of clementinewm:
     
     $ cp look $HOME/.config/look
 
