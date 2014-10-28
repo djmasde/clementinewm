@@ -1,5 +1,6 @@
 /* Clementine Window Manager
    Copyright 2002 Dave Berton <db@mosey.org>
+   Copyright 2014 Dj_Dexter/djmasde <djdexter@gentoo-es.com>
 
    based on aewm Copyright 1998-2001 Decklin Foster <decklin@red-bean.com>
 
