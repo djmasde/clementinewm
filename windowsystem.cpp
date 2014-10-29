@@ -58,9 +58,10 @@ int handle_xerror(Display *dpy, XErrorEvent *e)
 	char msg[255];
 	XGetErrorText(dpy, e->error_code, msg, sizeof msg);
 	std::cerr<<"X error:" + std::string(msg) << std::endl;//e->resourceid
-	//db more dump core
+//	//db more dump core
 //	std::cout << ((std::string*)0)->size();
-	exit(1);
+	exit(0); // exit (1); causes "peor que escopeta de feria"
+                 // exit (0); only closes the wm, if running in the same $DISPLAY
 //    }
 	//   windowManager->handleXerror( e );
 	// return 0;
