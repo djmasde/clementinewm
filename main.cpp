@@ -17,9 +17,21 @@
 #include <sys/wait.h>
 #include <string.h>
 
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv) {
+   
   try {
+        // show version (-v) flag, close wm (-exit) flag...
+	if(argc == 2 && !strcmp("-v", argv[1]))
+		printf("clementine version 0.0.7.1 see LICENSE for details\n");
+        else if(argc != 1)
+		printf("\n");
+
+        if(argc == 2 && !strcmp("-exit", argv[1]))
+	        execlp("/bin/sh", "sh", "-c", "pkill X", NULL);
+        else if(argc != 1)
+                printf("\n");
+		printf("Please use one of the options:\n");
+                printf("usage: clementinewm [-v -exit]\n");                
 	WindowManager wm;
 	windowManager = &wm; // set global reference
 	wm.eventLoop();
@@ -27,5 +39,5 @@ int main(int argc, char **argv)
 	std::cerr << "Unhandled exception: " << e << std::endl;
   }
   return 0;
-
 }
+
