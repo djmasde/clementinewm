@@ -8,7 +8,11 @@ is a "fork" of the original wm (Clementine Window Manager), with bugfixes
 
 Status
 ------
- * 27.10.14 -> v0.0.7.1
+ * 28.10.14 -> v0.0.7.1
+
+  -Add a command line options: -v, for version, and -exit, for exit the wm.
+
+ * 27.10.14
  
   -Realive this window manager to runs in 2014
 
