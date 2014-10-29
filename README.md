@@ -11,6 +11,8 @@ Status
  * 29.10.14
   
   -Fixing focus, in firefox or another windows...
+  
+  -minor fixes in windowsystem.cpp
 
  * 28.10.14 -> v0.0.7.1
 
