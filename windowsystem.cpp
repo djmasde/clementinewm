@@ -648,6 +648,7 @@ void WindowSystem::handlePropertyChange(XPropertyEvent *e)
     case XA_WM_NAME: {
 	char* n;
 	XFetchName(dpy, e->window, &n);
+        takeFocus( e->window );
 //	std::string newName( n );
 	XFree( n );
 //	takeNameChange( e->window, newName ); //possible buggy with gimp..
