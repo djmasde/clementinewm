@@ -8,6 +8,13 @@ is a "fork" of the original wm (Clementine Window Manager), with bugfixes
 
 Status
 ------
+ * 30.10.14
+  
+  -Minor fixes in windowsystem.cpp
+  
+  -More bugfixes in windowsystem.cpp
+
+
  * 29.10.14
   
   -Fixing focus, in firefox or another windows...
