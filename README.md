@@ -48,11 +48,17 @@ Need Xlib, then:
 
     $ make clean
 
+To runs ok the launcher needs, [dmenu]: http://tools.suckless.org/dmenu/
+
+Optional [dzen2]: https://github.com/robm/dzen/
+
+Urxvt "rxvt-unicode", is the default terminal (launch by left click of mouse)
+
 To install looks, in the current dir of clementinewm:
     
     $ cp look $HOME/.config/look
 
-    The "default" look is black, file "look"
+    The "default" look is black, file "look", and have more...
 
 Bugs
 ----
