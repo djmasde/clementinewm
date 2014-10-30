@@ -62,6 +62,7 @@ int handle_xerror(Display *dpy, XErrorEvent *e)
 //	std::cout << ((std::string*)0)->size();
 	exit(0); // exit (1); causes "peor que escopeta de feria"
                  // exit (0); only closes the wm, if running in the same $DISPLAY
+
 //    }
 	//   windowManager->handleXerror( e );
 	// return 0;
@@ -290,7 +291,7 @@ void WindowSystem::waitForMouse( XEvent* ev )
 void WindowSystem::handleXerror( XErrorEvent *e)
 {
     err("encountered X error, bailing");
-    exit(0);
+//    exit(0);
 /*
     Client *c = findClient(e->resourceid, WINDOW);
     if (e->error_code == BadAccess && e->resourceid == root) {
@@ -645,11 +646,15 @@ void WindowSystem::handleClientMessage(XClientMessageEvent *e)
 
 void WindowSystem::handlePropertyChange(XPropertyEvent *e)
 {
+    // Change a little this code for clementinewm = "a prueba de balas"
+    XEvent ev;
     switch (e->atom) {
     case XA_WM_NAME: {
 	char* n;
 	XFetchName(dpy, e->window, &n);
         takeFocus( e->window );
+        handleClientMessage(&ev.xclient);
+        XSetErrorHandler(ignore_xerror);
 //	std::string newName( n );
 	XFree( n );
 //	takeNameChange( e->window, newName ); //possible buggy with gimp..
@@ -665,6 +670,7 @@ void WindowSystem::handlePropertyChange(XPropertyEvent *e)
 void WindowSystem::handleEnter(XCrossingEvent *e)
 {
     takeFocus( e->window );
+    XSetErrorHandler(ignore_xerror);
 }
 
 void WindowSystem::handleColormapChange(XColormapEvent *e)
