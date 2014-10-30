@@ -48,11 +48,13 @@ Need Xlib, then:
 
     $ make clean
 
-To runs ok the launcher needs, [dmenu]: http://tools.suckless.org/dmenu/
+Needs
+-----
+ * [dmenu](http://tools.suckless.org/dmenu/)
 
-Optional [dzen2]: https://github.com/robm/dzen/
+ * [dzen] (https://github.com/robm/dzen/)
 
-Urxvt "rxvt-unicode", is the default terminal (launch by left click of mouse)
+ * "rxvt-unicode" 
 
 To install looks, in the current dir of clementinewm:
     
