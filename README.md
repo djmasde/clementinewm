@@ -50,11 +50,11 @@ Need Xlib, then:
 
 Needs
 -----
- * [dmenu](http://tools.suckless.org/dmenu/)
+ * [dmenu] (http://tools.suckless.org/dmenu/)
 
- * [dzen] (https://github.com/robm/dzen/)
+ * [dzen] (https://github.com/robm/dzen/) "Optional"
 
- * "rxvt-unicode" 
+ * rxvt-unicode 
 
 To install looks, in the current dir of clementinewm:
     
