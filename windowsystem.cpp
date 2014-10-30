@@ -58,7 +58,7 @@ int handle_xerror(Display *dpy, XErrorEvent *e)
 	char msg[255];
 	XGetErrorText(dpy, e->error_code, msg, sizeof msg);
 	std::cerr<<"X error:" + std::string(msg) << std::endl;//e->resourceid
-//	//db more dump core
+	//db more dump core
 //	std::cout << ((std::string*)0)->size();
 	exit(0); // exit (1); causes "peor que escopeta de feria"
                  // exit (0); only closes the wm, if running in the same $DISPLAY
@@ -290,7 +290,7 @@ void WindowSystem::waitForMouse( XEvent* ev )
 void WindowSystem::handleXerror( XErrorEvent *e)
 {
     err("encountered X error, bailing");
-    exit(1);
+    exit(0);
 /*
     Client *c = findClient(e->resourceid, WINDOW);
     if (e->error_code == BadAccess && e->resourceid == root) {
