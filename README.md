@@ -54,7 +54,7 @@ Needs
 
  * [dzen] (https://github.com/robm/dzen/) "Optional"
 
- * rxvt-unicode 
+ * rxvt-unicode (urxvt)
 
 To install looks, in the current dir of clementinewm:
     
