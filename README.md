@@ -9,6 +9,10 @@ is a "fork" of the original wm (Clementine Window Manager), with bugfixes
 Status
 ------
  * 30.10.14
+
+  -Added a manpage, for this wm
+
+  -Updated Makefile
   
   -Minor fixes in windowsystem.cpp
   
