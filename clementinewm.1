@@ -1,0 +1,68 @@
+.TH clementinewm 1 clementinewm-0.0.7.1
+.SH NAME
+clementinewn \- clementinewm is a very simple and lightweight window manager.
+.SH SYNOPSIS
+.B clementinewm
+.RB [ \-v ] [ \-exit ]
+.SH DESCRIPTION
+clementinewm is a very simple and lightweight window manager.
+is a "fork" of the original wm (Clementine Window Manager), with bugfixes
+.P
+This window manager are a fork, for the original clementine, with more bugfixes
+.P
+Minimized windows, are listed with a window list, with right button.
+.P
+For default, clementinewm launch urxvt (rxvt-unicode), with the left click.
+.P
+For resize of a window, alt+right click.
+.P
+Multihead is supported, aka multimonitor.
+.SH OPTIONS
+.B \-v
+prints version information to standard output, then exits.
+.P
+.B \-exit
+Exit, and closes X server connection.
+.SH USAGE
+.SS Status bar
+.TP
+.B X root window name
+is read and displayed in the status text area. It can be set with the
+.BR dzen2 (1)
+command.
+.TP
+.SH CUSTOMIZATION
+copy the file look to $HOME/.config/look, have more looks "themes", in the source dir
+of this wm.
+.SH SEE ALSO
+.BR dmenu (1)
+.SH BUGS
+Java applications which use the XToolkit/XAWT backend may draw grey windows
+only. The XToolkit/XAWT backend breaks ICCCM-compliance in recent JDK 1.5 and early
+JDK 1.6 versions, because it assumes a reparenting window manager. Possible workarounds
+are using JDK 1.4 (which doesn't contain the XToolkit/XAWT backend) or setting the
+environment variable
+.BR AWT_TOOLKIT=MToolkit
+(to use the older Motif backend instead) or running
+.B xprop -root -f _NET_WM_NAME 32a -set _NET_WM_NAME LG3D
+or
+.B wmname LG3D
+(to pretend that a non-reparenting window manager is running that the
+XToolkit/XAWT backend can recognize) or when using OpenJDK setting the environment variable
+.BR _JAVA_AWT_WM_NONREPARENTING=1 .
+.P
+GTK 2.10.9+ versions contain a broken
+.BR Save\-As
+file dialog implementation,
+which requests to reconfigure its window size in an endless loop. However, its
+window is still respondable during this state, so you can simply ignore the flicker
+until a new GTK version appears, which will fix this bug, approximately
+GTK 2.10.12+ versions.
+.SH NOTICE
+The original clementine Window Manager of Dave Berton, have more bugs. In this version more bugs are fixed:
+.P
+If more resizes a window, now this wm not crashed, resist.
+Not crashed with gimp, and firefox dialogs.
+Fixes the focus of Firefox, and other windows.
+.SH LICENSE
+Licensed under GNU GPL version 2.
