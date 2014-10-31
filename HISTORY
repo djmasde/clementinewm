@@ -12,7 +12,13 @@
 - Second button of the mouse no kills the wm, launchs dmenu_run
 - Minor bugfixes
 - Keybindings are deleted
-- Fixed crashes of this wm
+- Fixed crashes in wm, with gimp, and other windows...
+- Fixed the route for themes "look" to ~./config/look
+- If more resizes a window, now this wm not crashed, resist.
+- Created two command line options: -exit and -v
+  -exit to close wm, -v show the version of this wm.
+- Added a manpage, for this wm.
+- Updated Makefile.
 
 0.0.7
 - Expand styles a bit to cover buttons separately.  
