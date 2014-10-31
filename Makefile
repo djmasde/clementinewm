@@ -24,7 +24,7 @@ LDPATH   = -L$(XROOT)/lib
 LIBS     = -lX11
 
 PROG     = clementinewm
-#MANPAGE  = clementine.1x
+MANPAGE  = clementinewm.1
 OBJS     = client.o keys.o look.o main.o menu.o painter.o windowmanager.o windowsystem.o
 HEADERS  = client.h keys.h look.h menu.h painter.h tokenizer.hpp windowmanager.h windowsystem.h
 
@@ -38,9 +38,13 @@ $(OBJS): %.o: %.cpp $(HEADERS)
 
 install: all
 	install -s $(PROG) $(BINDIR)
-#	install -m 644 $(MANPAGE) $(MANDIR)
+	install -m 644 $(MANPAGE) $(MANDIR)
 #	gzip -9vf $(MANDIR)/$(MANPAGE)
 #	mkdir -p $(CFGDIR) && cp aewmrc.sample $(CFGDIR)/aewmrc
+
+uninstall:
+	rm /usr/bin/clementinewm
+	rm /usr/man/man1/clementinewm.1
 
 clean: 
 	rm -f $(PROG) $(OBJS)
