@@ -633,6 +633,7 @@ void WindowSystem::handleUnmap(XUnmapEvent *e)
 void WindowSystem::handleDestroy(XDestroyWindowEvent *e)
 {
     takeDestroy( e->window );
+    XSetErrorHandler(ignore_xerror);
 }
 
 void WindowSystem::handleClientMessage(XClientMessageEvent *e)
@@ -664,6 +665,7 @@ void WindowSystem::handlePropertyChange(XPropertyEvent *e)
 	// db more
 	err("XA_WM_NORMAL_HINTS not handled");
 //	XGetWMNormalHints(dpy, c->window, c->size, &dummy);
+        
     }
 }
 
