@@ -27,7 +27,7 @@ int main(int argc, char **argv) {
 		printf("\n");
 
         if(argc == 2 && !strcmp("-exit", argv[1]))
-	        execlp("/bin/sh", "sh", "-c", "pkill X", NULL);
+	        execlp("/bin/sh", "sh", "-c", "pkill clementinewm", NULL);
         else if(argc != 1)
                 printf("\n");
 		printf("Please use one of the options:\n");
