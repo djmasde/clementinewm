@@ -8,6 +8,12 @@ is a "fork" of the original wm (Clementine Window Manager), with bugfixes
 
 Status
 ------
+ * 05.04.15
+
+  -Fixed closing only this wm, not all X sessions
+
+  -Updated Minor things
+
  * 30.10.14
 
   -Added a manpage, for this wm
